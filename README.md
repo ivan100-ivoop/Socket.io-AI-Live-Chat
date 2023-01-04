@@ -10,4 +10,7 @@ Install npm i
 
 run node index.js
 
+# Images
+![](images/image (1).png)
+
 # Thanks
