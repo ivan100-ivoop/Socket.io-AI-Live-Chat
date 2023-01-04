@@ -11,6 +11,7 @@ Install npm i
 run node index.js
 
 # Images
-![] (images/image (1).png)
+![](images/image1.png)
+![](images/image2.png)
 
 # Thanks
