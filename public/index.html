@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO AI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="js/card.js"></script>
+    <style>
+      .darkmode{
+        background-color: #36393e;
+      }
+    </style>
+  </head>
+  <body class='darkmode'>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-6 col-xl-4">
+
+        <div class="card darkmode">
+          <div class="card-header d-flex justify-content-between align-items-center p-3 bg-info text-white border-bottom-0"
+            style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+            <i class="fas fa-angle-left"></i>
+            <p class="mb-0 fw-bold"> Socket.IO AI Live chat</p>
+            <i class="fas fa-times">
+              <select id="model-select" class="btn btn-mini" style="font-style: inherit; font-family: monospace; padding: inline;" >
+              </select>
+            </i>
+            </div>
+          <div class="card-body overflow-auto" id="messages_wall" style="position: relative; height: 400px">
+          </div>
+          <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3">
+            <form class="input-group mb-0" id="form">
+            <div class="input-group mb-0">
+              <input type="text" id="message-input" class="form-control" placeholder="Type message"
+                aria-label="me" aria-describedby="button-addon2" />
+              <button class="btn btn-primary" type="submit" id="button-addon2" style="padding-top: .55rem;">
+                Send
+              </button>
+            </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+ </body>
+</html>
