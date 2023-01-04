@@ -10,4 +10,4 @@ Install npm i
 
 run node index.js
 
-#Thanks
+# Thanks
